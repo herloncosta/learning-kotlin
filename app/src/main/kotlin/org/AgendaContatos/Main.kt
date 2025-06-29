@@ -21,7 +21,7 @@ fun main() {
         print("Escolha uma opção: ")
         when (readLine()?.trim()) {
             "1" -> createContact()
-            "2" -> listContact()
+            "2" -> listContacts()
             "3" -> findContactByName()
             "4" -> removeContactByName()
             "5" -> {
@@ -52,7 +52,7 @@ fun createContact() {
     println("Contato adicionado com sucesso!\n")
 }
 
-fun listContact() {
+fun listContacts() {
     if (contacts.isEmpty()) {
         println("Nenhum contato na agenda.\n")
         return
